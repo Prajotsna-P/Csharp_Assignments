@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace calculator
-{
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
 
-    namespace ConsoleApp
+    namespace Books_info
     {
 
         struct Books
@@ -41,20 +33,19 @@ namespace calculator
             {
                 Books book = new Books();
 
-                Console.Write("Enter Book Id :");
+                Console.WriteLine("Enter Book Id :");
                 book.BookId = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Enter Book Title:");
+                Console.WriteLine("Enter Book Title:");
                 book.Title = (Console.ReadLine());
 
-                Console.Write("Enter Book Price:");
+                Console.WriteLine("Enter Book Price:");
                 book.Price = Convert.ToInt32(Console.ReadLine());
 
 
 
                 book.BookType = Books.bookType.Magazine;
-                Console.WriteLine("------------");
-                Console.WriteLine("------------");
+               
                 Console.WriteLine("The Book ID :" + book.BookId);
                 Console.WriteLine("The Book Title:" + book.Title);
                 Console.WriteLine("The Book Price:" + book.Price);
@@ -62,4 +53,4 @@ namespace calculator
             }
         }
     }
-}
+
