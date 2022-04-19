@@ -6,7 +6,7 @@
 
     namespace Books_info
     {
-
+/* Structure struct Books creation*/
         struct Books
         {
             public enum bookType
@@ -19,7 +19,7 @@
             private int _bookId;
             private bookType _bookType;
 
-
+//Using properties get and set
             public string Title { get; set; }
 
             public int Price { get; set; }
@@ -27,6 +27,7 @@
             public bookType BookType { get; set; }
 
         }
+        //Getting the inputs
         class BookStructureAndEnum
         {
             public static void Main()
@@ -45,7 +46,7 @@
 
 
                 book.BookType = Books.bookType.Magazine;
-               
+               //Printing the outputs
                 Console.WriteLine("The Book ID :" + book.BookId);
                 Console.WriteLine("The Book Title:" + book.Title);
                 Console.WriteLine("The Book Price:" + book.Price);
